@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+#GET         /                    controllers.Application.index
+
+
+#game actions, api endpoints
+GET        /hangman/api/create              controllers.Application.createGame()
+GET        /hangman/api/management          controllers.Application.management()
+GET        /hangman/api/load/:id            controllers.Application.loadGame(id: Long)
+GET        /hangman/api/play/:id/:char      controllers.Application.playGame(id: Long, char: String)
