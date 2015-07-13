@@ -38,10 +38,11 @@ application.langs="en"
 # db.default.user=sa
 # db.default.password=""
 
+#change db parameters based on deployment server
 db.default.driver=com.mysql.jdbc.Driver
 db.default.url="jdbc:mysql://localhost/hangman?characterEncoding=UTF-8"
-db.default.user=root
-db.default.pass="m@v3n@m"
+db.default.user=db_user
+db.default.pass=db_password
 
 # Evolutions
 # ~~~~~

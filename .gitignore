@@ -33,3 +33,6 @@ server.pid
 *.eml
 /dist/
 .cache
+
+#ignore application conf, the template file should be added and edited for local use
+application.conf

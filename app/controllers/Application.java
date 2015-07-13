@@ -41,8 +41,6 @@ public class Application extends Controller {
 
         for (int i = 0; i < guesses.length; i++) {
             validChars[i] = new ValidChars(Character.valueOf(guesses[i]), wordMap.get(Character.valueOf(guesses[i])).split(","));
-            System.out.println(guesses[i]);
-            System.out.println(Character.valueOf(guesses[i]));
         }
         //add the character indices to the right guesses field so that game state can be fully restored on client side
         currentGame.setRightGuesses(toJson(validChars).toString());
