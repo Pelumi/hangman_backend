@@ -6,7 +6,6 @@ import models.response.hangman.ValidChars;
 import play.mvc.*;
 
 import utils.GameUtil;
-import views.html.*;
 
 import java.util.Map;
 import java.util.Set;
@@ -14,10 +13,6 @@ import java.util.Set;
 import static play.libs.Json.toJson;
 
 public class Application extends Controller {
-
-    public static Result index() {
-        return ok(index.render("Your new application is ready."));
-    }
 
     /**
      * creates a new game and returns the game data as a json string
